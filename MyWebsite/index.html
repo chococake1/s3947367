@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <title>
+            wahaha
+        </title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.0/buzz.min.js"></script>
+        
+        <style>
+            .row{
+                width:720px;
+                margin: 10px auto 10px auto ;
+            }
+            .image-container {
+                display: table-cell;
+                vertical-align: middle;
+                padding:20px;
+            }
+        </style>
+
+    </head>
+    <body style="background-color:skyblue;">
+        <h1 style="color:blue">
+            First Heading!!!
+        </h1>
+        <h2 style="color:yellow">
+            Second heading!!
+        </h2>
+        <h3 style="color:red">
+            Third heading!
+        </h3>
+        <p style="color:green">
+            no longer heading.
+        </p>
+
+        <div class="row">
+            <div class="image-container"><img id="cat1" src="img/la cat.jpg" height="200" width="200"/></div>
+            <div class="image-container"><img id="cat2" src="img/la cat.jpg" height="200" width="200"/></div>
+            <div class="image-container"><img id="cat3" src="img/la cat.jpg" height="200" width="200"/></div>
+        </div>
+
+        <div class="row">
+            <div class="image-container"><img id="cat4" src="img/la cat.jpg" height="200" width="200"/></div>
+            <div class="image-container"><img id="cat5" src="img/la cat.jpg" height="200" width="200"/></div>
+            <div class="image-container"><img id="cat6" src="img/la cat.jpg" height="200" width="200"/></div>
+            </div>
+
+        <div class="row">
+            <div class="image-container"><img id="pink" src="img/pink.png" onmousedown="this.src='img/yellow.png';" onmouseup="this.src='img/pink.png';"height="200" width="200"></div>
+            <div class="image-container"><img id="yellow" src="img/yellow.png" onmousedown="this.src='img/blue.png';" onmouseup="this.src='img/yellow.png';"height="200" width="200"></div>
+            <div class="image-container"><img id="blue" src="img/blue.png" onmousedown="this.src='img/pink.png';" onmouseup="this.src='img/blue.png';"height="200" width="200"></div>
+        </div>
+
+        <img src="img/la cat.jpg" width="60%"/>
+        <img src="img/blue.png" width="60%"/>
+        <img src="img/yellow.png" width="60%"/>
+        <img src="img/pink.png" width="60%"/>
+
+        <script>
+            var sound1 = new buzz.sound("sound/basketball.mp3");
+            var sound2 = new buzz.sound("sound/door beep.mp3");
+            var sound3 = new buzz.sound("sound/leaves.mp3");
+            var sound4 = new buzz.sound("sound/mechanisms.mp3");
+            var sound5 = new buzz.sound("sound/water.mp3");
+            var sound6 = new buzz.sound("sound/chomp.wav");
+            var sound7 = new buzz.sound("sound/glitch1.mp3");
+            var sound8 = new buzz.sound("sound/glitch2.mp3");
+            var sound9 = new buzz.sound("sound/glitch3.mp3");
+     
+            window.onload = function() {
+                document.getElementById('cat1').addEventListener('click', function () {sound1.play(); });  
+                document.getElementById('cat2').addEventListener('click', function () {sound2.play(); });
+                document.getElementById('cat3').addEventListener('click', function () {sound3.play(); });
+                document.getElementById('cat4').addEventListener('click', function () {sound4.play(); });
+                document.getElementById('cat5').addEventListener('click', function () {sound5.play(); }); 
+                document.getElementById('cat6').addEventListener('click', function () {sound6.play(); }); 
+                document.getElementById('pink').addEventListener('click', function () {sound7.play(); }); 
+                document.getElementById('yellow').addEventListener('click', function () {sound8.play(); }); 
+                document.getElementById('blue').addEventListener('click', function () {sound9.play(); });
+            }  
+        </script>  
+
+    </body>
+</html>
