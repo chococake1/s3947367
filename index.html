@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>
+            wahaha
+        </title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.0/buzz.min.js"></script>
+        
+        <style>
+        <style>
+            .row{
+                width:720px;
+                margin: 10px auto 10px auto ;
+            }
+            .image-container {
+                display: table-cell;
+                vertical-align: middle;
+                padding:20px;
+            }
+        </style>
+        </style>
+
+    </head>
+    <body style="background-color:skyblue;">
+        <div class="row">
+            <div class="image-container"><img id="mountains" src="img/mountains1.png" onmousedown="this.src='img/mountains2.png';" onmouseup="this.src='img/mountains1.png';"height="200" width="200"/></div>
+            <div class="image-container"><img id="factory" src="img/factory1.png" onmousedown="this.src='img/factory2.png';" onmouseup="this.src='img/factory1.png';"height="200" width="200"/></div>
+            <div class="image-container"><img id="ice" src="img/ice1.png" onmousedown="this.src='img/ice2.png';" onmouseup="this.src='img/ice1.png';"height="200" width="200"/></div>
+        </div>
+
+        <div class="row">
+            <div class="image-container"><img id="thunder" src="img/thunder1.png" onmousedown="this.src='img/thunder2.png';" onmouseup="this.src='img/thunder1.png';"height="200" width="200"/></div>
+            <div class="image-container"><img id="ozone" src="img/ozone1.png" onmousedown="this.src='img/ozone2.png';" onmouseup="this.src='img/ozone1.png';"height="200" width="200"/></div>
+            <div class="image-container"><img id="leaf" src="img/leaf1.png" onmousedown="this.src='img/leaf2.png';" onmouseup="this.src='img/leaf1.png';"height="200" width="200"/></div>
+            </div>
+
+        <div class="row">
+            <div class="image-container"><img id="umbrella" src="img/umbrella1.png" onmousedown="this.src='img/umbrella2.png';" onmouseup="this.src='img/umbrella1.png';"height="200" width="200"></div>
+            <div class="image-container"><img id="thermometer" src="img/thermometer1.png" onmousedown="this.src='img/thermometer2.png';" onmouseup="this.src='img/thermometer1.png';"height="200" width="200"></div>
+            <div class="image-container"><img id="city" src="img/city1.png" onmousedown="this.src='img/city2.png';" onmouseup="this.src='img/city1.png';"height="200" width="200"></div>
+        </div>
+
+        <script>
+            var sound1 = new buzz.sound("sound/snow steps.mp3");
+            var sound2 = new buzz.sound("sound/steam train.mp3")
+            var sound3 = new buzz.sound("sound/freezing.mp3");
+            var sound4 = new buzz.sound("sound/thunder.mp3");
+            var sound5 = new buzz.sound("sound/synth.mp3");
+            var sound6 = new buzz.sound("sound/leaves.mp3");
+            var sound7 = new buzz.sound("sound/opening umbrella.mp3");
+            var sound8 = new buzz.sound("sound/rising.mp3");
+            var sound9 = new buzz.sound("sound/traffic.mp3");
+     
+            window.onload = function() {
+                document.getElementById('mountains').addEventListener('mousedown', function () {sound1.play(); });  
+                document.getElementById('factory').addEventListener('mousedown', function () {sound2.play(); });
+                document.getElementById('ice').addEventListener('mousedown', function () {sound3.play(); });
+                document.getElementById('thunder').addEventListener('mousedown', function () {sound4.play(); });
+                document.getElementById('ozone').addEventListener('mousedown', function () {sound5.play(); }); 
+                document.getElementById('leaf').addEventListener('mousedown', function () {sound6.play(); }); 
+                document.getElementById('umbrella').addEventListener('mousedown', function () {sound7.play(); }); 
+                document.getElementById('thermometer').addEventListener('mousedown', function () {sound8.play(); }); 
+                document.getElementById('city').addEventListener('mousedown', function () {sound9.play(); });
+            }  
+        </script>  
+
+    </body>
+</html>
